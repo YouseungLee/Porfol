@@ -14,7 +14,6 @@ body > .box {
     flex-direction: row;
     justify-content: center;
     padding: 2rem 0;
-    position: relative; 
 }
 
 body > .box > .wrapper {
@@ -23,7 +22,7 @@ body > .box > .wrapper {
     align-items: stretch;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;    
+    justify-content: stretch;
 }
 
 body > .box > .wrapper > .header {
