@@ -11,6 +11,5 @@ blinkLine = () => {
         shown = true;
     }
 }
-
 setInterval(blinkLine, 500);
 
