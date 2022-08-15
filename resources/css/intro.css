@@ -1,4 +1,6 @@
 body > .box > .wrapper.content {
+    padding: 0 0 0 1rem;
+    border-left: 0.125rem solid rgb(119, 119, 119);
     flex-direction: row;
     align-items: stretch;
     justify-content: flex-start;
@@ -11,13 +13,14 @@ body > .box > .wrapper > .profile-container {
 
 body > .box > .wrapper > .profile-container > .profile {
     width: 100%;
+    height: 100%;
 }
 
 body > .box > .wrapper > .title-container  {
     margin-left: 1rem;
     width: 35%;
     min-height: 100%;
-    align-items: flex-start;
+    align-items: flex-end;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;    
@@ -28,9 +31,14 @@ body > .box > .wrapper > .title-container.hidden {
 }
 
 body > .box > .wrapper > .title-container > .title {
+    cursor: pointer;
     font-size: 2rem;
     font-weight: 600;
     text-align: left;
+}
+
+body > .box > .wrapper > .title-container > .title:hover {
+    color: rgb(50, 50, 50);
 }
 
 body > .box > .wrapper > .title-container > .line {
@@ -39,4 +47,58 @@ body > .box > .wrapper > .title-container > .line {
     width: 0.125rem;
     height: 2rem;
     background-color: rgb(0, 0, 0); 
+}
+
+body > .box > .wrapper > .content-container {
+    margin-left: 1rem;    
+    min-height: 100%;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-weight: 600;
+}
+
+body > .box > .wrapper > .content-container.hidden {
+    display: none;
+}
+
+body > .box > .wrapper > .content-container > .first-container {
+    padding: 0 0.375rem;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}   
+
+body > .box > .wrapper > .content-container > .first-container > li {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+body > .box > .wrapper > .content-container > .first-container > li > .image-container {
+    font-size: 2rem;
+}
+
+body > .box > .wrapper > .content-container > .first-container > li > .text-container {
+    margin-left: 1rem;
+    font-weight: 600;    
+}
+
+body > .box > .wrapper > .content-container > .second-container {    
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+body > .box > .wrapper > .content-container > .second-container > li {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }

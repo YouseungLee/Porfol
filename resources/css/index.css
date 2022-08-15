@@ -32,16 +32,16 @@ body > .box > .wrapper > .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 0.125rem solid rgb(229, 229, 229);
+    border-bottom: 0.125rem solid rgb(150, 150, 150);
 }
 
 body > .box > .wrapper > .header > .logo-container {
     font-size: 2rem;
     font-weight: 700;
 }
-
+/* 
 body > .box > .wrapper > .header > .name-space {
     color: rgb(150, 150, 150);
     font-weight: 500;  
       
-}
+} */

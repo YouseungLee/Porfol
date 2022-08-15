@@ -1,5 +1,7 @@
 const line = document.querySelector('.line');
+const title = document.querySelector('.title');
 const titleContent = document.querySelector('.title-container');
+const contentContainer = document.querySelector('.content-container');
 let shown = true;
 
 blinkLine = () => {
@@ -13,3 +15,7 @@ blinkLine = () => {
 }
 setInterval(blinkLine, 500);
 
+title.addEventListener("click", () => {
+    titleContent.classList.add("hidden");
+    contentContainer.classList.remove("hidden");
+})

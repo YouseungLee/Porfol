@@ -41,3 +41,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-block: unset;
     margin-inline: unset;
 }
+
+* {
+    margin: unset;
+    padding: unset;
+    list-style: none;
+}
