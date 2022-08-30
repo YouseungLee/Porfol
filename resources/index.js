@@ -6,7 +6,7 @@ function getTime() {
     const hours = date.getHours();
     
     if (hours >= 12) {
-        clock.innerText = "PM " + `${hours - 12}` + ":" + `${minutes}`;
+        clock.innerText = "PM " + `${hours - 12}` + ":" + minutes < 10 ? `${minutes}` : `${minutes}`;
     } else if (hours === 0) {
         clock.innerText = "AM " + `${hours + 12}` + ":" + `${minutes}`;
     } else {
