@@ -2,15 +2,15 @@ const box = document.querySelector(".icon.box");
 const clock = document.querySelector(".clock")
 function getTime() {
     const date = new Date();
-    const minutes = date.getMinutes();
-    const hours = date.getHours();
-    
+    const hours = String(date.getHours()).padStart(2, "0");
+    const minute = String(date.getMinutes()).padStart(2, "0"); 
+        
     if (hours >= 12) {
-        clock.innerText = "PM " + `${hours - 12}` + ":" + minutes < 10 ? `${minutes}` : `${minutes}`;
+        clock.innerText = "PM " + `${hours - 12}` + ":" + `${minute}`;
     } else if (hours === 0) {
-        clock.innerText = "AM " + `${hours + 12}` + ":" + `${minutes}`;
+        clock.innerText = "AM " + `${hours + 12}` + ":" + `${minute}`;
     } else {
-        clock.innerText = "AM " + `${hours}` + ":" + `${minutes}`;
+        clock.innerText = "AM " + `${hours}` + ":" + `${minute}`;
     }
 }
 
