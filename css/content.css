@@ -1,0 +1,11 @@
+body > .content-area {
+    font-size: 2rem;
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
